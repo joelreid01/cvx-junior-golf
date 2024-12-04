@@ -23,7 +23,7 @@ export const EventsBlock = ({
         <>
           <Title heading="h2" text={title} />
           <Description text={description} />
-          <CTALinks links={links ?? []} justify="start" />
+          <CTALinks links={links ?? []} />
         </>
         {image && typeof image === 'object' && <Media resource={image} className="rounded-lg" />}
       </TwoColumnLayout>
